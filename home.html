@@ -7,6 +7,9 @@
     <script src="vendor/jquery.min.js"></script>
     <script src="vendor/jquery.onepage-scroll.min.js"></script>
     <script src="vendor/slick-slider.min.js"></script>
+    <script src="vendor/slick-slider.min.js"></script>
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
 <body>
 <div class="layout--preloader">
@@ -14,80 +17,140 @@
     <div></div>
     <div class="layout--preloader-last"></div>
 </div>
-<header class="layout--container component--header">
-    <div class="header--menu-button">
-        <span></span>
-    </div>
-    <a href="home.html" class="header--logo">
-        <div class="header--logo-group">
-            <img src="images/rect.svg" alt="Dash">
-            <img src="images/rect.svg" alt="Dash">
-            <img class="layout--line" src="images/rect.svg" alt="Dash">
+<div class="header--wrapper">
+    <header class="layout--container component--header">
+        <div class="header--mobile-lines">
+            <div class="header--menu-button">
+                <span></span>
+            </div>
         </div>
-        <img src="images/logo-text.svg" alt="Econia">
-    </a>
-    <div class="header--menu">
-        <a href="/company.html" class="header--menu-item txt--legal layout--line">
-            Компанія
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+        <a href="home.html" class="header--logo">
+            <div class="header--logo-group">
+                <img src="images/rect.svg" alt="Dash">
+                <img src="images/rect.svg" alt="Dash">
+                <img src="images/rect.svg" alt="Dash">
+            </div>
+            <img src="images/logo-text.svg" alt="Econia">
         </a>
-        <a href="#" class="header--menu-item txt--legal">
-            Бренди
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="/partnership.html" class="header--menu-item txt--legal">
-            Партнерство
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="#" class="header--menu-item txt--legal">
-            Кар’єра
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="/news.html" class="header--menu-item txt--legal layout--line">
-            Новини
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="#" class="header--menu-item txt--legal">
-            Контакти
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <div class="header--menu-copyright">
-            <a href="#" class="txt--legal-white">
-                СУСПІЛЬНА ВІДПОВІДАЛЬНІСТЬ
+        <div class="header--menu">
+            <div class="header--menu-item-wrapper">
+                <a href="/company.html" class="header--menu-item txt--legal">
+                    Компанія
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/brands.html" class="header--menu-item txt--legal">
+                    Бренди
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/partnership.html" class="header--menu-item txt--legal">
+                    Партнерство
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/careers.html" class="header--menu-item txt--legal">
+                    Кар’єра
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/news.html" class="header--menu-item txt--legal">
+                    Новини
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/contacts.html" class="header--menu-item txt--legal">
+                    Контакти
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+
+            <div class="header--menu-copyright">
+                <a href="#" class="txt--legal-white">
+                    СУСПІЛЬНА ВІДПОВІДАЛЬНІСТЬ
+                </a>
+                <a href="#" class="txt--regular-light">Політика конфіденційності</a>
+                <p class="txt--regular-light">Усі права захищені © <span id="footer-copyright"></span> Econia</p>
+            </div>
+        </div>
+        <div class="header--controls">
+            <a href="/search.html" class="header--controls-search">
+                <img src="images/search-icon.svg" alt="Search icon">
             </a>
-            <a href="#" class="txt--regular-light">Політика конфіденційності</a>
-            <p class="txt--regular-light">Усі права захищені © <span id="footer-copyright"></span> Econia</p>
+            <a href="#" class="header--controls-distributors" id="distr-open-form-button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                     y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                    <g><path d="M500,10C229.4,10,10,229.4,10,500c0,270.6,219.4,490,490,490c270.6,0,490-219.4,490-490C990,229.4,770.6,10,500,10L500,10z M500,966.1C242.6,966.1,33.9,757.4,33.9,500C33.9,242.6,242.6,33.9,500,33.9c257.4,0,466.1,208.7,466.1,466.1C966.1,757.4,757.4,966.1,500,966.1L500,966.1z"/>
+                        <path d="M750.5,759.8c0.5,1.6-0.6,0.5-0.2,2.1L750.5,759.8c0,8.2-6.6,14.8-14.9,14.8c-8.2,0-15.5-6.6-15.5-14.8l0,0c-28.6-94.5-116.3-163.3-220.1-163.3c-103.8,0-192,72.1-220.6,166.6l0.4-3.3c0,9.8-9.8,14.8-15.5,14.8c-8.2,0-14.8-6.6-14.8-14.8l0,0c0.4-1.6,0.5-3.2,0.9-4.8c0.1-0.4,0.2-0.8,0.4-1.2c24.2-83,88.6-148.8,170.8-174.8c-63.2-29.6-107.1-93.6-107.1-168c0-102.5,83.1-185.6,185.6-185.6c102.5,0,185.6,83.1,185.6,185.6c0,74.4-43.9,138.4-107.1,168c82.2,26,146.5,91.9,170.8,174.8C749.3,754.2,750.3,759.4,750.5,759.8L750.5,759.8L750.5,759.8z M655.8,410.9c0-86.1-69.8-155.9-155.9-155.9c-86.1,0-155.9,69.8-155.9,155.9c0,86.1,69.8,155.9,155.9,155.9C586,566.8,655.8,497,655.8,410.9L655.8,410.9L655.8,410.9z"/></g>
+</svg>
+            </a>
+            <div class="header--language-selector">
+                <div class="language--selector-current">
+                    UA
+                </div>
+                <div class="language--selector-list-wrapper">
+                    <div class="language--selector-list">
+                        <a class="list--item">
+                            <div class="list--item-image">
+                                <img src="images/lang-current.png" alt="lang">
+                            </div>
+                            <div class="list--item-text">
+                                UA
+                            </div>
+                        </a>
+                        <a class="list--item">
+                            <div class="list--item-image">
+                                <img src="images/lang.png" alt="lang">
+                            </div>
+                            <div class="list--item-text">
+                                EN
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="header--controls">
-        <a href="#" class="header--controls-search">
-            <img src="images/search-icon.svg" alt="Search icon">
-        </a>
-<!--        <div class="header&#45;&#45;language-select">-->
-<!--            <div class="language&#45;&#45;select-visible txt&#45;&#45;ns-regular"></div>-->
-<!--            <div class="language&#45;&#45;select-hidden">-->
-<!--                <div class="language&#45;&#45;select-hidden-item txt&#45;&#45;ns-regular">UA</div>-->
-<!--                <div class="language&#45;&#45;select-hidden-item txt&#45;&#45;ns-regular">EN</div>-->
-<!--            </div>-->
-<!--        </div>-->
-    </div>
-</header>
+        <div class="distr--form distr--form-hidden" id="distr--form">
+            <div class="distr--form-body background--malibu-gradient">
+                <img src="images/icons/icon-close.png" alt="Icon Close" class="distr--form-close"
+                     id="distr-close-form-button">
+            </div>
+        </div>
+    </header>
+</div>
 
 
 <div class="scroll-section" id="page-home-page">
     <section class="layout--container scroll--screen">
         <div class="scroll--screen-body main--screen-first">
-            <h1 class="txt--heading">ЗДОРОВ'Я <br> З ПЕРШИХ ДНІВ <br> І НА ВСЕ ЖИТТЯ</h1>
-            <div class="main--video block--rounded">
-                <img src="/images/main-page/screen-1-video-preview.png" alt="Video Preview">
+            <h1 class="txt--heading" data-aos="fade-down">ЗДОРОВ'Я <br> З ПЕРШИХ ДНІВ <br> І НА ВСЕ ЖИТТЯ</h1>
+            <div class="main--video block--rounded object--video" data-aos="fade-down" data-aos-delay="300"
+                 id="econia-player-wrapper">
+                <div class="plyr__video-embed" id="econia-main-page-player">
+                    <iframe
+                            src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                            allowfullscreen
+                            allowtransparency
+                            allow="autoplay"
+                    ></iframe>
+                </div>
+            </div>
+            <div>
             </div>
         </div>
     </section>
     <section class="layout--container scroll--screen">
         <div class="scroll--screen-body main--screen-second">
-            <div class="txt--heading">ЩО ВІДРІЗНЯЄ <br> «ECONIA»<br> ВІД ІНШИХ</div>
-            <div class="block--rounded block--rounded-infinite blocks--container main--screen-second-mobile-slider">
-                <div class="blocks--container-group">
+            <div class="txt--heading" data-aos="fade-down">ЩО ВІДРІЗНЯЄ <br> «ECONIA»<br> ВІД ІНШИХ</div>
+            <div class="block--rounded block--rounded-infinite blocks--container main--screen-second-mobile-slider"
+                 data-aos="fade-down" data-aos-delay="300">
+                <div class="blocks--container-group" data-aos="fade-down" data-aos-delay="600">
                     <div class="block--item">
                         <div class="block--item-icon">
                             <img src="images/main-page/advantages/icon-1.png" alt="Advantage Icon">
@@ -114,7 +177,7 @@
                             розробок</p>
                     </div>
                 </div>
-                <div class="blocks--container-group">
+                <div class="blocks--container-group" data-aos="fade-down" data-aos-delay="900">
                     <div class="block--item">
                         <div class="block--item-icon">
                             <img src="images/main-page/advantages/icon-5.png" alt="Advantage Icon">
@@ -147,16 +210,16 @@
     </section>
     <section class="layout--container scroll--screen">
         <div class="scroll--screen-body main--screen-third">
-            <div class="txt--heading main--screen-third-heading">БРЕНДИ</div>
-            <div class="brands--slider-wrapper">
+            <div class="txt--heading main--screen-third-heading" data-aos="fade-down">БРЕНДИ</div>
+            <div class="brands--slider-wrapper" id="brands-slider-wrapper">
                 <div class="brands--slider-item item--child">
                     <div class="item--child-header">
                         <div class="txt--heading main--screen-third-heading-mobile">НАШІ БРЕНДИ</div>
-                        <div class="item--child-header-controls">
+                        <div class="item--child-header-controls" data-aos="fade-down" data-aos-delay="300">
                             <div class="block--rounded-medium item--child-heading-background background--malibu-gradient">
                                 <div class="txt--heading-medium">Дітям</div>
                             </div>
-                            <div class="item--child-button">
+                            <div class="item--child-button" id="brands-button-to-adult">
                                 <div class="circle--button-gradient"><span></span></div>
                                 <div class="txt--legal">ДОРОСЛИМ</div>
                             </div>
@@ -165,39 +228,383 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item--child-body">
-                        <div class="item--background-dash"></div>
-                        <div class="slider--child-arrow-prev slider--button-arrow arrow-prev"></div>
-                        <div class="slider--child-wrapper">
-                            <div class="slider--child-item">
-                                <img src="images/main-page/brands/child/akvulya.png" alt="Malyatko">
+                    <div class="item--child-body" data-aos="fade-down" data-aos-delay="600">
+                        <div class="child--brands-slider" id="child-brands-slider">
+                            <div class="child--brands-slider-wrapper" id="children-brands-custom-slider">
+                                <div class="brands--slider-item">
+                                    <div class="brand--subslider brand--subslider-akvulya brand--subslider-common-class">
+                                        <div class="brand--subslider-background"></div>
+                                        <div class="slider--item">
+                                            <img src="images/main-page/brands/child/akvulya.png" alt="akvulya">
+                                        </div>
+                                        <div class="slider--item">
+                                            <img src="images/main-page/brands/child/akvulya.png" alt="akvulya">
+                                        </div>
+                                        <div class="slider--item">
+                                            <img src="images/main-page/brands/child/akvulya.png" alt="akvulya">
+                                        </div>
+                                        <div class="slider--hidden-content" hidden>
+                                            <div class="hidden--images">
+                                                <div class="slider--item">
+                                                    <img src="images/brands/adult/malyatko.png" alt="Bottle">
+                                                </div>
+                                                <div class="slider--item">
+                                                    <img src="images/brands/adult/malyatko.png" alt="Bottle">
+                                                </div>
+                                                <div class="slider--item">
+                                                    <img src="images/brands/adult/malyatko.png" alt="Bottle">
+                                                </div>
+                                            </div>
+                                            <div class="hidden--title">
+                                                ТМ «Малятко»
+                                            </div>
+                                            <div class="hidden--subtitle">
+                                                Дитяча вода для пиття
+                                                з перших днiв життя
+                                            </div>
+                                            <div class="hidden--description">
+                                                ТМ «Малятко» пропонує усі групи першого прикорму для дітей у віці від 0
+                                                до 6 років.
+                                            </div>
+                                            <div class="hidden--list-title">
+                                                Асортимент продукції включає:
+                                            </div>
+                                            <div class="hidden--list">
+                                                <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                    овочеві
+                                                </li>
+                                                <li>Дитячі однокомпонентні та багатокомпонентні пюре: фруктові та
+                                                    овочеві
+                                                </li>
+                                                <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                                <li>Спеціальне дитяче печиво</li>
+                                                <li>ЗГМ</li>
+                                                <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                    овочеві
+                                                </li>
+                                                <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                                <li>Спеціальне дитяче печиво</li>
+                                                <li>ЗГМ</li>
+                                                <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                    овочеві
+                                                </li>
+                                                <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                                <li>Спеціальне дитяче печиво</li>
+                                                <li>ЗГМ</li>
+                                            </div>
+                                            <div class="hidden--button-text"></div>
+                                            <div class="hidden--button-href"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brands--slider-item">
+                                    <div class="brand--subslider brand--subslider-malyatko brand--subslider-common-class">
+                                        <div class="brand--subslider-background"></div>
+                                        <div class="slider--item">
+                                            <img src="images/main-page/brands/child/malyatko.png" alt="malyatko">
+                                        </div>
+                                        <div class="slider--item">
+                                            <img src="images/main-page/brands/child/malyatko.png" alt="malyatko">
+                                        </div>
+                                        <div class="slider--item">
+                                            <img src="images/main-page/brands/child/malyatko.png" alt="malyatko">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="slider--child-item">
-                                <img src="images/main-page/brands/child/malyatko.png" alt="Malyatko">
-                            </div>
-                            <div class="slider--child-item">
-                                <img src="images/main-page/brands/child/akvulya.png" alt="Malyatko">
-                            </div>
-                            <div class="slider--child-item">
-                                <img src="images/main-page/brands/child/malyatko.png" alt="Malyatko">
+                            <div class="slider--child-arrow-prev slider--button-arrow arrow-prev"
+                                 id="brands-child-arrov-prev"></div>
+                            <div class="slider--child-arrow-next slider--button-arrow"
+                                 id="brands-child-arrov-next"></div>
+                            <div class="mobile--brands-list">
+                                <div class="list--item">
+                                    <img src="images/main-page/brands/child/malyatko-mobile.png" alt="Malyatko">
+                                    <button class="button--border">
+                                        <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
+                                    </button>
+                                    <div class="slider--hidden-content" hidden>
+                                        <div class="hidden--images">
+                                            <div class="slider--item">
+                                                <img src="images/main-page/brands/child/malyatko-mobile.png"
+                                                     alt="Bottle">
+                                            </div>
+                                            <div class="slider--item">
+                                                <img src="images/main-page/brands/child/malyatko-mobile.png"
+                                                     alt="Bottle">
+                                            </div>
+                                            <div class="slider--item">
+                                                <img src="images/main-page/brands/child/malyatko-mobile.png"
+                                                     alt="Bottle">
+                                            </div>
+                                        </div>
+                                        <div class="hidden--title">
+                                            ТМ «Малятко»
+                                        </div>
+                                        <div class="hidden--subtitle">
+                                            Дитяча вода для пиття
+                                            з перших днiв життя
+                                        </div>
+                                        <div class="hidden--description">
+                                            ТМ «Малятко» пропонує усі групи першого прикорму для дітей у віці від 0
+                                            до 6 років.
+                                        </div>
+                                        <div class="hidden--list-title">
+                                            Асортимент продукції включає:
+                                        </div>
+                                        <div class="hidden--list">
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні пюре: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                        </div>
+                                        <div class="hidden--button-text">aa</div>
+                                        <div class="hidden--button-href">ass</div>
+                                    </div>
+                                </div>
+                                <div class="list--item">
+                                    <img src="images/main-page/brands/child/akvulya.png" alt="Malyatko">
+                                    <button class="button--border">
+                                        <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="slider--child-arrow-next slider--button-arrow"></div>
+                    </div>
+                </div>
+                <div class="brands--slider-item item--adult">
+                    <div class="item--child-header">
+                        <div class="txt--heading main--screen-third-heading-mobile">НАШІ БРЕНДИ</div>
+                        <div class="item--child-header-controls">
+                            <div class="block--rounded-medium item--child-heading-background background--malibu-gradient">
+                                <div class="txt--heading-medium">Дорослим</div>
+                            </div>
+                            <div class="item--child-button" id="brands-button-to-children">
+                                <div class="circle--button-gradient"><span></span></div>
+                                <div class="txt--legal">ДІТЯМ</div>
+                            </div>
+                            <div class="item--child-header-button-mobile" id="adult-back-button-mobile">
+                                <img src="images/icons/icon-right.png" alt="Arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item--child-body">
+                        <div class="adult--brands-slider" id="adult-brands-slider">
+                            <div class="brands--slider-item">
+                                <div class="brand--subslider brand--subslider-yodo brand--subslider-common-class">
+                                    <div class="brand--subslider-background"></div>
+                                    <div class="slider--item">
+                                        <img src="images/brands/adult/jodo.png" alt="jodo">
+                                    </div>
+                                    <div class="slider--item">
+                                        <img src="images/brands/adult/jodo.png" alt="jodo">
+                                    </div>
+                                    <div class="slider--hidden-content" hidden>
+                                        <div class="hidden--images">
+                                            <div class="slider--item">
+                                                <img src="images/brands/adult/jodo.png" alt="jodo">
+                                            </div>
+                                            <div class="slider--item">
+                                                <img src="images/brands/adult/jodo.png" alt="jodo">
+                                            </div>
+                                            <div class="slider--item">
+                                                <img src="images/brands/adult/jodo.png" alt="jodo">
+                                            </div>
+                                        </div>
+                                        <div class="hidden--title">
+                                            JODO VODA
+                                        </div>
+                                        <div class="hidden--subtitle">
+                                            Jodo test test test
+                                        </div>
+                                        <div class="hidden--description">
+                                            ТМ «Jodo» пропонує усі групи першого прикорму для дітей у віці від 0
+                                            до 6 років.
+                                        </div>
+                                        <div class="hidden--list-title">
+                                            Асортимент продукції включає:
+                                        </div>
+                                        <div class="hidden--list">
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні пюре: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                        </div>
+                                        <div class="hidden--button-text">TEST</div>
+                                        <div class="hidden--button-href">google.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brands--slider-item">
+                                <div class="brand--subslider brand--subslider-yodo brand--subslider-common-class">
+                                    <div class="brand--subslider-background"></div>
+                                    <div class="slider--item">
+                                        <img src="images/brands/adult/divo.png" alt="divo">
+                                    </div>
+                                    <div class="slider--item">
+                                        <img src="images/brands/adult/divo.png" alt="divo">
+                                    </div>
+                                    <div class="slider--hidden-content" hidden>
+                                        <div class="hidden--images">
+                                            <div class="slider--item">
+                                                <img src="images/brands/adult/divo.png" alt="divo">
+                                            </div>
+                                            <div class="slider--item">
+                                                <img src="images/brands/adult/divo.png" alt="divo">
+                                            </div>
+                                            <div class="slider--item">
+                                                <img src="images/brands/adult/divo.png" alt="divo">
+                                            </div>
+                                        </div>
+                                        <div class="hidden--title">
+                                            divo VODA
+                                        </div>
+                                        <div class="hidden--subtitle">
+                                            divo test test test
+                                        </div>
+                                        <div class="hidden--description">
+                                            ТМ «divo» пропонує усі групи першого прикорму для дітей у віці від 0
+                                            до 6 років.
+                                        </div>
+                                        <div class="hidden--list-title">
+                                            Асортимент продукції включає:
+                                        </div>
+                                        <div class="hidden--list">
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні пюре: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brands--slider-item">
+                                <div class="brand--subslider brand--subslider-yodo brand--subslider-common-class">
+                                    <div class="brand--subslider-background"></div>
+                                    <div class="slider--item">
+                                        <img src="images/brands/adult/key.png" alt="key">
+                                    </div>
+                                    <div class="slider--item">
+                                        <img src="images/brands/adult/key.png" alt="key">
+                                    </div>
+                                    <div class="slider--hidden-content" hidden>
+                                        <div class="hidden--images">
+                                            <div class="slider--item">
+                                                <img src="images/brands/adult/key.png" alt="key">
+                                            </div>
+                                            <div class="slider--item">
+                                                <img src="images/brands/adult/key.png" alt="key">
+                                            </div>
+                                            <div class="slider--item">
+                                                <img src="images/brands/adult/key.png" alt="key">
+                                            </div>
+                                        </div>
+                                        <div class="hidden--title">
+                                            Chistiy Kluch
+                                        </div>
+                                        <div class="hidden--subtitle">
+                                            Chistiy Kluch test test test
+                                        </div>
+                                        <div class="hidden--description">
+                                            ТМ «Chistiy Kluch» пропонує усі групи першого прикорму для дітей у віці від
+                                            0
+                                            до 6 років.
+                                        </div>
+                                        <div class="hidden--list-title">
+                                            Асортимент продукції включає:
+                                        </div>
+                                        <div class="hidden--list">
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні пюре: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                            <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та
+                                                овочеві
+                                            </li>
+                                            <li>Сухі розчинні каші (молочні і безмолочні)</li>
+                                            <li>Спеціальне дитяче печиво</li>
+                                            <li>ЗГМ</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="mobile--brands-list">
                             <div class="list--item">
-                                <img src="images/main-page/brands/child/malyatko-mobile.png" alt="Malyatko">
+                                <img src="images/brands/adult/jodo.png" alt="Malyatko">
                                 <button class="button--border">
                                     <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
                                 </button>
                             </div>
                             <div class="list--item">
-                                <img src="images/main-page/brands/child/akvulya.png" alt="Malyatko">
+                                <img src="images/brands/adult/divo.png" alt="Malyatko">
                                 <button class="button--border">
                                     <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
                                 </button>
                             </div>
                             <div class="list--item">
-                                <img src="images/main-page/brands/child/teen-team.png" alt="Malyatko">
+                                <img src="images/brands/adult/key.png" alt="Malyatko">
                                 <button class="button--border">
                                     <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
                                 </button>
@@ -205,91 +612,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="brands--slider-item item--adult">
-                    <div class="item--adult-header">
-                        <div class="item--adult-button">
-                            <div class="circle--button-gradient size--medium direction--left"><span></span></div>
-                            <div class="txt--legal">НАЗАД</div>
-                        </div>
-                        <div class="item--adult-header-back txt--legal-nolink">назад</div>
+                <div class="detail--section detail--section-hidden" id="brands-details-section">
+                    <div class="detail--section-back" id="brands-button-details-back">
+                        <div class="circle--button-gradient size--medium direction--left"><span></span></div>
+                        <div class="txt--legal">НАЗАД</div>
                     </div>
-                    <div class="item--adult-body">
-                        <div class="slider--adult-image-wrapper">
-                            <div class="slider--adult-image-item">
-                                <img src="images/main-page/brands/adult/malyatko.png" alt="Malyatko">
+                    <div class="detail--section-image-slider" id="detail-section-image-slider"></div>
+                    <div class="detail--section-text">
+                        <div class="text--title" id="detail-section-title"></div>
+                        <div class="text--subtitle" id="detail-section-subtitle"></div>
+                        <div class="text--description txt--medium-dark" id="detail-section-description"></div>
+                        <div class="text--list-title txt--medium-dark" id="detail-section-list-title"></div>
+                        <ul class="text--list object--list custom--scrollbar txt--medium-dark"
+                            id="detail-section-list"></ul>
+                        <a id="detail-section-button-wrapper">
+                            <div class="button--rectangle" id="detail-section-button">
+                                Детальніше
                             </div>
-                            <div class="slider--adult-image-item">
-                                <img src="images/main-page/brands/adult/malyatko.png" alt="Malyatko">
-                            </div>
-                            <div class="slider--adult-image-item">
-                                <img src="images/main-page/brands/adult/malyatko.png" alt="Malyatko">
-                            </div>
-                        </div>
-                        <div class="slider--adult-text-wrapper">
-                            <div class="slider--adult-text-item">
-                                <div class="txt--heading-small item--title">ТМ «Малятко»</div>
-                                <div class="txt--subtitle item--subtitle">Дитяча вода для пиття з перших днiв життя
-                                </div>
-
-                                <div class="txt--medium-dark item--description">ТМ «Малятко» пропонує усі групи першого
-                                    прикорму для дітей у віці від 0 до 6 років.
-                                </div>
-
-                                <div class="txt--medium-dark item--list-title">Асортимент продукції включає:</div>
-
-                                <ul class="object--list txt--medium-small-dark item--list custom--scrollbar">
-                                    <li>Спеціальна дитяча вода</li>
-                                    <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та овочеві</li>
-                                    <li>Сухі розчинні каші (молочні і безмолочні)</li>
-                                    <li>Дитячі однокомпонентні та багатокомпонентні пюре: фруктові та овочеві</li>
-                                    <li>Спеціальна дитяча вода</li>
-                                    <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та овочеві</li>
-                                    <li>Сухі розчинні каші (молочні і безмолочні)</li>
-                                    <li>Дитячі однокомпонентні та багатокомпонентні пюре: фруктові та овочеві</li>
-                                </ul>
-                                <div class="item--button button--rectangle">детальніше</div>
-                            </div>
-                            <div class="slider--adult-text-item">
-                                <div class="txt--heading-small item--title">ТМ «Малятко 1»</div>
-                                <div class="txt--subtitle item--subtitle">Дитяча вода для пиття з перших днiв життя
-                                </div>
-
-                                <div class="txt--medium-dark item--description">ТМ «Малятко» пропонує усі групи першого
-                                    прикорму для дітей у віці від 0 до 6 років.
-                                </div>
-
-                                <div class="txt--medium-dark item--list-title">Асортимент продукції включає:</div>
-
-                                <ul class="object--list txt--medium-small-dark item--list custom--scrollbar">
-                                    <li>Спеціальна дитяча вода</li>
-                                    <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та овочеві</li>
-                                    <li>Спеціальна дитяча вода</li>
-                                    <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та овочеві</li>
-                                    <li>Сухі розчинні каші (молочні і безмолочні)</li>
-                                    <li>Дитячі однокомпонентні та багатокомпонентні пюре: фруктові та овочеві</li>
-                                </ul>
-                                <div class="item--button button--rectangle">детальніше</div>
-                            </div>
-                            <div class="slider--adult-text-item">
-                                <div class="txt--heading-small item--title">ТМ «Малятко 2»</div>
-                                <div class="txt--subtitle item--subtitle">Дитяча вода для пиття з перших днiв життя
-                                </div>
-
-                                <div class="txt--medium-dark item--description">ТМ «Малятко» пропонує усі групи першого
-                                    прикорму для дітей у віці від 0 до 6 років.
-                                </div>
-
-                                <div class="txt--medium-dark item--list-title">Асортимент продукції включає:</div>
-
-                                <ul class="object--list txt--medium-small-dark item--list custom--scrollbar">
-                                    <li>Спеціальна дитяча вода</li>
-                                    <li>Дитячі однокомпонентні та багатокомпонентні соки: фруктові та овочеві</li>
-                                    <li>Сухі розчинні каші (молочні і безмолочні)</li>
-                                    <li>Дитячі однокомпонентні та багатокомпонентні пюре: фруктові та овочеві</li>
-                                </ul>
-                                <div class="item--button button--rectangle">детальніше</div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -297,7 +637,7 @@
     </section>
     <section class="layout--container scroll--screen">
         <div class="scroll--screen-body main--screen-fourth">
-            <div class="txt--heading main--screen-fourth-heading">пропонуємо</div>
+            <div class="txt--heading main--screen-fourth-heading" data-aos="fade-down">пропонуємо</div>
             <div class="main--screen-fourth-body">
                 <div class="body--item">
                     <div class="block--rounded-medium background--malibu-gradient main--screen-fourth-heading-background">
@@ -305,36 +645,41 @@
                             Private Label
                         </div>
                     </div>
-                    <div class="main--screen-fourth-body-content">
-                        <div class="content--item">
-                            <img src="images/main-page/private-label.png" alt="Private Label">
-                            <div class="txt--medium-small content--item-toggler" data-econia-toggle-word="фото">читать
+                    <div data-aos="fade-down" data-aos-delay="600">
+                        <div class="main--screen-fourth-body-content">
+                            <div class="content--item">
+                                <img src="images/main-page/private-label.png" alt="Private Label">
+                                <div class="txt--medium-small content--item-toggler" data-econia-toggle-word="фото">
+                                    читать
+                                </div>
                             </div>
-                        </div>
-                        <div class="content--item">
-                            <p class="txt--medium-dark">
-                                На сьогоднішній день Econia має успішний і плідний досвід з виробництва питної води та
-                                дитячого харчування під торговою маркою замовника (Private Label). Реалізовані проекти і
-                                максимальна партнерська спрямованість компанії дозволяють говорити про те, що
-                                партнерство з Econia — це перспективне і ефективне вкладення в створення унікального
-                                самоокупного бренду.
-                            </p>
+                            <div class="content--item">
+                                <p class="txt--medium-dark">
+                                    На сьогоднішній день Econia має успішний і плідний досвід з виробництва питної води
+                                    та
+                                    дитячого харчування під торговою маркою замовника (Private Label). Реалізовані
+                                    проекти і
+                                    максимальна партнерська спрямованість компанії дозволяють говорити про те, що
+                                    партнерство з Econia — це перспективне і ефективне вкладення в створення унікального
+                                    самоокупного бренду.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="body--item">
                     <div class="buttons--container">
-                        <div class="buttons--container-item">
+                        <div class="buttons--container-item" data-aos="fade-left" data-aos-delay="300">
                             <a href="#" class="circle--button-gradient"><span></span></a>
                             <a href="#" class="txt--legal">НАША<br>ПРОДУКЦІЯ</a>
                             <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
                         </div>
-                        <div class="buttons--container-item">
+                        <div class="buttons--container-item" data-aos="fade-left" data-aos-delay="500">
                             <a href="#" class="circle--button-gradient"><span></span></a>
                             <a href="#" class="txt--legal">ЕТАПИ<br>СТВОРЕННЯ</a>
                             <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
                         </div>
-                        <div class="buttons--container-item">
+                        <div class="buttons--container-item" data-aos="fade-left" data-aos-delay="700">
                             <a href="#" class="circle--button-gradient"><span></span></a>
                             <a href="#" class="txt--legal">ЕКСПОРТ<br>ТА ІМПОРТ</a>
                             <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
@@ -346,15 +691,15 @@
     </section>
     <section class="layout--container scroll--screen">
         <div class="scroll--screen-body  main--screen-fifth">
-            <div class="background--left">
-                <span class="txt--heading-medium-italic">МИ</span>
-                <span class="txt--heading-medium-italic">МИ</span>
-                <span class="txt--heading-medium-italic">МИ</span>
+            <div class="background--left" data-aos="fade-down">
+                <span class="txt--heading-medium-italic" data-aos="fade-down" data-aos-delay="300">МИ</span>
+                <span class="txt--heading-medium-italic" data-aos="fade-down" data-aos-delay="600">МИ</span>
+                <span class="txt--heading-medium-italic" data-aos="fade-down" data-aos-delay="900">МИ</span>
             </div>
             <div class="content--center">
-                <div class="txt--heading">партнерство</div>
+                <div class="txt--heading" data-aos="fade-down">партнерство</div>
                 <div class="content--container">
-                    <div class="content--container-item">
+                    <div class="content--container-item" data-aos="fade-down" data-aos-delay="300">
                         <div class="item--title txt--heading-small font--bold color--black">Професійні</div>
                         <div class="item--description txt--medium-dark">
                             Підтримуємо креативність, новий погляд, аналітичні уміння бачити цілі глибоко
@@ -362,7 +707,7 @@
                             щось нове і унікальне.
                         </div>
                     </div>
-                    <div class="content--container-item">
+                    <div class="content--container-item" data-aos="fade-down" data-aos-delay="600">
                         <div class="item--title txt--heading-small font--bold color--black">Перфекціоністи</div>
                         <div class="item--description txt--medium-dark">
                             Результати нашої роботи цінуємо понад усе.
@@ -370,7 +715,7 @@
                             і в нашу команду.
                         </div>
                     </div>
-                    <div class="content--container-item">
+                    <div class="content--container-item" data-aos="fade-down" data-aos-delay="900">
                         <div class="item--title txt--heading-small font--bold color--black">корисні</div>
                         <div class="item--description txt--medium-dark">
                             Щиро віримо у те, що ми корисні
@@ -380,17 +725,17 @@
                 </div>
             </div>
             <div class="buttons--right">
-                <div class="buttons--right-item">
+                <div class="buttons--right-item" data-aos="fade-left" data-aos-delay="300">
                     <a href="#" class="circle--button-gradient"><span></span></a>
                     <a href="#" class="txt--legal">НАША <br> КОМАНДА</a>
                     <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
                 </div>
-                <div class="buttons--right-item">
+                <div class="buttons--right-item" data-aos="fade-left" data-aos-delay="500">
                     <a href="#" class="circle--button-gradient"><span></span></a>
                     <a href="#" class="txt--legal">PRIVATE <br> LABEL</a>
                     <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
                 </div>
-                <div class="buttons--right-item">
+                <div class="buttons--right-item" data-aos="fade-left" data-aos-delay="700">
                     <a href="#" class="circle--button-gradient"><span></span></a>
                     <a href="#" class="txt--legal">ЗАМОВИТИ</a>
                     <img src="images/icons/icon-blue-arrow.png" alt="Arrow">
@@ -400,12 +745,12 @@
     </section>
     <section class="layout--container scroll--screen">
         <div class="scroll--screen-body main--screen-six">
-            <div class="title--left">
+            <div class="title--left" data-aos="fade-down">
                 <div class="txt--heading">Кар’єра</div>
             </div>
             <div class="content--center">
-                <div class="content--center-title-mobile txt--heading">Кар’єра</div>
-                <div class="positions--container custom--scrollbar">
+                <div class="content--center-title-mobile txt--heading" data-aos="fade-down">Кар’єра</div>
+                <div class="positions--container custom--scrollbar" data-aos="fade-down" data-aos-delay="300">
                     <div class="positions--item">
                         <div class="position--item-title txt--heading-small font--bold color--mine-shaft text--transform-unset">
                             Бренд-менеджер
@@ -472,11 +817,11 @@
                     <a class="txt--regular color--cerulean" href="#">Всі адреси</a>
                 </div>
                 <div class="external--site-container">
-                    <a href="#" class="external--site-item">
+                    <a href="#" class="external--site-item" data-aos="fade-right" data-aos-delay="600">
                         <img src="images/main-page/careers/icon-workua.png" alt="Work.ua icon">
                         <img src="images/icons/icon-blue-arrow.png" alt="Arrow" class="item--arrow"/>
                     </a>
-                    <a href="#" class="external--site-item">
+                    <a href="#" class="external--site-item" data-aos="fade-right" data-aos-delay="800">
                         <img src="images/main-page/careers/icon-rabotaua.png" alt="Rabota.ua icon">
                         <img src="images/icons/icon-blue-arrow.png" alt="Arrow" class="item--arrow"/>
                     </a>
@@ -488,11 +833,11 @@
             </div>
             <div class="content--right background--malibu-gradient content--right-careers">
                 <div class="communication--section">
-                    <div class="feedback--section">
+                    <div class="feedback--section" data-aos="fade-left" data-aos-delay="600">
                         <div class="feedback--section-title">Приєднуйтесь <br> до нашої команди</div>
                         <button class="feedback--section-button button--rectangle">Залишити вiдгук</button>
                     </div>
-                    <div class="subscription--section">
+                    <div class="subscription--section" data-aos="fade-left" data-aos-delay="800">
                         <div class="subscription--section-title">Розсилка з вакансіями</div>
                         <div class="subscription--section-description txt--medium">Ми будемо надсилати Вам на пошту всі
                             актуальнi вакансії
@@ -575,10 +920,10 @@
     <section class="layout--container scroll--screen">
         <div class="scroll--screen-body main--screen-seven">
             <div class="section--left">
-                <div class="txt--heading">КОНТАКТИ</div>
+                <div class="txt--heading" data-aos="fade-down">КОНТАКТИ</div>
                 <div class="contacts--container custom--scrollbar contacts--container-mobile-slider">
                     <div>
-                        <div class="contacts--item">
+                        <div class="contacts--item" data-aos="fade-right" data-aos-delay="300">
                             <div class="contacts--item-title">Кипр:</div>
                             <div class="contacts--item-description">
                                 <span>
@@ -595,7 +940,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contacts--item">
+                        <div class="contacts--item" data-aos="fade-right" data-aos-delay="500">
                             <div class="contacts--item-title">Словакия:</div>
                             <div class="contacts--item-description">
                                 <span>
@@ -614,7 +959,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="contacts--item">
+                        <div class="contacts--item" data-aos="fade-right" data-aos-delay="700">
                             <div class="contacts--item-title">Украина:</div>
                             <div class="contacts--item-description">
                                 <span>
@@ -631,7 +976,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contacts--item">
+                        <div class="contacts--item" data-aos="fade-right" data-aos-delay="900">
                             <div class="contacts--item-title">Кипр:</div>
                             <div class="contacts--item-description">
                                 <span>
@@ -666,12 +1011,17 @@
                 </div>
             </div>
             <div class="section--right contacts--map-section">
-                <div class="section--right-back txt--legal-nolink color--white contacts--map-section-button-back">назад</div>
-                <div class="map">
+                <div class="section--right-back txt--legal-nolink color--white contacts--map-section-button-back">
+                    назад
+                </div>
+                <div class="map" data-aos="fade-down" data-aos-delay="300">
                     <img src="images/main-page/map.png" alt="Google Map">
                 </div>
                 <div class="section--right-map-description-mobile"></div>
-                <div class="button--rectangle section--right-button">Зв’язатися з нами</div>
+                <div class="button--rectangle section--right-button" id="contacts-show-form-button" data-aos="fade-down"
+                     data-aos-delay="600">
+                    Зв’язатися з нами
+                </div>
             </div>
         </div>
     </section>
@@ -680,7 +1030,8 @@
 
 <footer class="layout--container component--footer">
     <div class="footer--controls">
-        <img class="footer--scroll-button" src="images/scroll-button.svg" alt="Scroll Icon">
+        <div></div>
+        <img class="footer--scroll-button" src="images/scroll-button.jpg" alt="Scroll Icon">
         <img class="footer--scroll-button-top" src="images/scroll-top-button.png" alt="Scroll Icon">
     </div>
     <div class="footer--text">
@@ -691,14 +1042,26 @@
         <p class="txt--regular">Усі права захищені © <span id="footer-copyright"></span> Econia</p>
     </div>
     <div class="footer-mobile-controls">
-        <div class="control--left">
+        <div class="control--left" id="footer-contacts-button">
             <img src="images/icons/footer-chat-icon.png" alt="Chat">
         </div>
-        <div class="control--right">
+        <div class="control--right" id="telephone-contacts-button">
             <img src="images/icons/footer-call-icon.png" alt="Call">
+        </div>
+    </div>
+    <div class="contacts--form contacts--form-hidden" id="contacts-form">
+        <div class="contacts--form-body background--malibu-gradient">
+            <img src="images/icons/icon-close.png" alt="Icon Close" class="contacts--form-close"
+                 id="contacts-close-form-button">
+        </div>
+    </div>
+    <div class="contacts--form contacts--form-hidden" id="telephone-form">
+        <div class="contacts--form-body background--malibu-gradient">
+            <img src="images/icons/icon-close.png" alt="Icon Close" class="contacts--form-close"
+                 id="telephone-close-form-button">
         </div>
     </div>
 </footer>
 
-<script src="index.f1849caf29c99b46501c.js"></script></body>
+<script src="index.8b00f7f515598d39fcbf.js"></script></body>
 </html>

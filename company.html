@@ -7,6 +7,9 @@
     <script src="vendor/jquery.min.js"></script>
     <script src="vendor/jquery.onepage-scroll.min.js"></script>
     <script src="vendor/slick-slider.min.js"></script>
+    <script src="vendor/slick-slider.min.js"></script>
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
 <body>
 <div class="layout--preloader">
@@ -14,75 +17,124 @@
     <div></div>
     <div class="layout--preloader-last"></div>
 </div>
-<header class="layout--container component--header">
-    <div class="header--menu-button">
-        <span></span>
-    </div>
-    <a href="home.html" class="header--logo">
-        <div class="header--logo-group">
-            <img src="images/rect.svg" alt="Dash">
-            <img src="images/rect.svg" alt="Dash">
-            <img class="layout--line" src="images/rect.svg" alt="Dash">
+<div class="header--wrapper">
+    <header class="layout--container component--header">
+        <div class="header--mobile-lines">
+            <div class="header--menu-button">
+                <span></span>
+            </div>
         </div>
-        <img src="images/logo-text.svg" alt="Econia">
-    </a>
-    <div class="header--menu">
-        <a href="/company.html" class="header--menu-item txt--legal layout--line">
-            Компанія
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+        <a href="home.html" class="header--logo">
+            <div class="header--logo-group">
+                <img src="images/rect.svg" alt="Dash">
+                <img src="images/rect.svg" alt="Dash">
+                <img src="images/rect.svg" alt="Dash">
+            </div>
+            <img src="images/logo-text.svg" alt="Econia">
         </a>
-        <a href="#" class="header--menu-item txt--legal">
-            Бренди
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="/partnership.html" class="header--menu-item txt--legal">
-            Партнерство
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="#" class="header--menu-item txt--legal">
-            Кар’єра
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="/news.html" class="header--menu-item txt--legal layout--line">
-            Новини
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="#" class="header--menu-item txt--legal">
-            Контакти
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <div class="header--menu-copyright">
-            <a href="#" class="txt--legal-white">
-                СУСПІЛЬНА ВІДПОВІДАЛЬНІСТЬ
+        <div class="header--menu">
+            <div class="header--menu-item-wrapper">
+                <a href="/company.html" class="header--menu-item txt--legal">
+                    Компанія
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/brands.html" class="header--menu-item txt--legal">
+                    Бренди
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/partnership.html" class="header--menu-item txt--legal">
+                    Партнерство
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/careers.html" class="header--menu-item txt--legal">
+                    Кар’єра
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/news.html" class="header--menu-item txt--legal">
+                    Новини
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/contacts.html" class="header--menu-item txt--legal">
+                    Контакти
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+
+            <div class="header--menu-copyright">
+                <a href="#" class="txt--legal-white">
+                    СУСПІЛЬНА ВІДПОВІДАЛЬНІСТЬ
+                </a>
+                <a href="#" class="txt--regular-light">Політика конфіденційності</a>
+                <p class="txt--regular-light">Усі права захищені © <span id="footer-copyright"></span> Econia</p>
+            </div>
+        </div>
+        <div class="header--controls">
+            <a href="/search.html" class="header--controls-search">
+                <img src="images/search-icon.svg" alt="Search icon">
             </a>
-            <a href="#" class="txt--regular-light">Політика конфіденційності</a>
-            <p class="txt--regular-light">Усі права захищені © <span id="footer-copyright"></span> Econia</p>
+            <a href="#" class="header--controls-distributors" id="distr-open-form-button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                     y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                    <g><path d="M500,10C229.4,10,10,229.4,10,500c0,270.6,219.4,490,490,490c270.6,0,490-219.4,490-490C990,229.4,770.6,10,500,10L500,10z M500,966.1C242.6,966.1,33.9,757.4,33.9,500C33.9,242.6,242.6,33.9,500,33.9c257.4,0,466.1,208.7,466.1,466.1C966.1,757.4,757.4,966.1,500,966.1L500,966.1z"/>
+                        <path d="M750.5,759.8c0.5,1.6-0.6,0.5-0.2,2.1L750.5,759.8c0,8.2-6.6,14.8-14.9,14.8c-8.2,0-15.5-6.6-15.5-14.8l0,0c-28.6-94.5-116.3-163.3-220.1-163.3c-103.8,0-192,72.1-220.6,166.6l0.4-3.3c0,9.8-9.8,14.8-15.5,14.8c-8.2,0-14.8-6.6-14.8-14.8l0,0c0.4-1.6,0.5-3.2,0.9-4.8c0.1-0.4,0.2-0.8,0.4-1.2c24.2-83,88.6-148.8,170.8-174.8c-63.2-29.6-107.1-93.6-107.1-168c0-102.5,83.1-185.6,185.6-185.6c102.5,0,185.6,83.1,185.6,185.6c0,74.4-43.9,138.4-107.1,168c82.2,26,146.5,91.9,170.8,174.8C749.3,754.2,750.3,759.4,750.5,759.8L750.5,759.8L750.5,759.8z M655.8,410.9c0-86.1-69.8-155.9-155.9-155.9c-86.1,0-155.9,69.8-155.9,155.9c0,86.1,69.8,155.9,155.9,155.9C586,566.8,655.8,497,655.8,410.9L655.8,410.9L655.8,410.9z"/></g>
+</svg>
+            </a>
+            <div class="header--language-selector">
+                <div class="language--selector-current">
+                    UA
+                </div>
+                <div class="language--selector-list-wrapper">
+                    <div class="language--selector-list">
+                        <a class="list--item">
+                            <div class="list--item-image">
+                                <img src="images/lang-current.png" alt="lang">
+                            </div>
+                            <div class="list--item-text">
+                                UA
+                            </div>
+                        </a>
+                        <a class="list--item">
+                            <div class="list--item-image">
+                                <img src="images/lang.png" alt="lang">
+                            </div>
+                            <div class="list--item-text">
+                                EN
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="header--controls">
-        <a href="#" class="header--controls-search">
-            <img src="images/search-icon.svg" alt="Search icon">
-        </a>
-<!--        <div class="header&#45;&#45;language-select">-->
-<!--            <div class="language&#45;&#45;select-visible txt&#45;&#45;ns-regular"></div>-->
-<!--            <div class="language&#45;&#45;select-hidden">-->
-<!--                <div class="language&#45;&#45;select-hidden-item txt&#45;&#45;ns-regular">UA</div>-->
-<!--                <div class="language&#45;&#45;select-hidden-item txt&#45;&#45;ns-regular">EN</div>-->
-<!--            </div>-->
-<!--        </div>-->
-    </div>
-</header>
+        <div class="distr--form distr--form-hidden" id="distr--form">
+            <div class="distr--form-body background--malibu-gradient">
+                <img src="images/icons/icon-close.png" alt="Icon Close" class="distr--form-close"
+                     id="distr-close-form-button">
+            </div>
+        </div>
+    </header>
+</div>
 
 
 <div class="layout--container page--company" id="page-company-page">
     <section class="page--company-intro">
         <div class="section--left">
-            <div class="txt--heading">
+            <div class="txt--heading"  data-aos="fade-down">
                 Компанiя
             </div>
         </div>
         <div class="section--mobile-reverse">
-            <div class="section--center">
+            <div class="section--center" data-aos="fade-down" data-aos-delay="300">
                 <div class="section--center-heading">
                     МИ ВІРИМО У СИЛУ ЯКІСНОГО ХАРЧУВАННЯ, ЩО ЗДАТНЕ СТАТИ ОСНОВОЮ ЗДОРОВ’Я З ПЕРШИХ ДНІВ І НА ВСЕ ЖИТТЯ.
                 </div>
@@ -93,40 +145,42 @@
                     підкорює серця дітей та батьків у багатьох країнах світу.
                 </div>
             </div>
-            <div class="section--right">
+            <div class="section--right" data-aos="fade-down" data-aos-delay="600">
                 <img src="images/partnership/intro.png" alt="Glass">
             </div>
         </div>
     </section>
     <section class="page--company-stats">
         <div class="section--description">
-            <span>
+            <span data-aos="fade-down">
                 Щодня понад 200 кращих спеціалістів вкладають усі свої сили, знаннята відповідальність, щоб працюватив компанії зі світовим ім’ям.
             </span>
-            <span>
+            <span data-aos="fade-down" data-aos-delay="200">
                 Ми прагнемо становитися краще, відкривати нові продукти, нові ніші, знаходити нові унікальні рішеннята рецепти – і все це для того, щоб створювати для вас та ваших малюків продукти, що стануть основою здоров’яна все життя.
             </span>
         </div>
         <div class="section--stats">
-            <div class="section--stats-item">
+            <div class="section--stats-item" data-aos="fade-up" data-aos-delay="300">
                 <img src="images/company/stats-dash-icon.png" alt="Dash">
                 <div class="item--number">1240</div>
                 <div class="item--text">фахiвцiв</div>
             </div>
-            <div class="section--stats-item">
+            <div class="section--stats-item"data-aos="fade-up" data-aos-delay="600">
                 <img src="images/company/stats-dash-icon.png" alt="Dash">
                 <div class="item--number">80+</div>
                 <div class="item--text">заводiв партнерiв</div>
             </div>
-            <div class="section--stats-item">
+            <div class="section--stats-item" data-aos="fade-up" data-aos-delay="900">
                 <img src="images/company/stats-dash-icon.png" alt="Dash">
                 <div class="item--number">398 321 l</div>
                 <div class="item--text">продукцiї у рiк</div>
             </div>
         </div>
-        <div class="section--title">ЯКІСТЬ • ІННОВАЦІЙНІСТЬ • ПРОФЕСІОНАЛІЗМ</div>
+        <div class="marquee3k" data-speed="0.5">
+            <div class="section--title">ЯКІСТЬ • ІННОВАЦІЙНІСТЬ • ПРОФЕСІОНАЛІЗМ •&nbsp;</div>
+        </div>
         <div class="section--tips">
-            <div class="section--tips-item">
+            <div class="section--tips-item" data-aos="fade-down" data-aos-delay="300">
                 <div class="item--header txt--heading color--white">візія</div>
                 <div class="item--description txt--medium">
                     Створення
@@ -134,7 +188,7 @@
                     для здоров’я поколінь.
                 </div>
             </div>
-            <div class="section--tips-item">
+            <div class="section--tips-item" data-aos="fade-down" data-aos-delay="600">
                 <div class="item--header txt--heading color--white">місія</div>
                 <div class="item--description txt--medium">
                     Бути безперечним лідером на ринку, відкриваючи нові ніші, насичуючи їх
@@ -142,7 +196,7 @@
                     та безпечнимипродуктами, нести найцінніше – турботу про здоров’я з перших днів життя.
                 </div>
             </div>
-            <div class="section--tips-item">
+            <div class="section--tips-item" data-aos="fade-down" data-aos-delay="900">
                 <div class="item--header txt--heading color--white">цінності</div>
                 <div class="item--description txt--medium">
                     Впроваджуємо якість в кожен процес компанії – від виробництва продукту до
@@ -153,10 +207,10 @@
         </div>
     </section>
     <section class="page--company-quote">
-        <div class="section--media">
-            <img src="images/company/iv.png" alt=iv"">
+        <div class="section--media" data-aos="fade-down">
+            <img src="images/company/iv.png" alt="iv">
         </div>
-        <div class="section--quote">
+        <div class="section--quote" data-aos="fade-left" data-aos-delay="300">
             <div class="section--quote-quotes">
                 <img src="images/icons/icon-quote.png" alt="Quote">
                 <img src="images/icons/icon-quote.png" alt="Quote">
@@ -172,8 +226,8 @@
         </div>
     </section>
     <section class="page--company-history">
-        <div class="txt--heading">IСТОРIЯ</div>
-        <div class="history--wave" id="history-wave-mobile-drag-container">
+        <div class="txt--heading" data-aos="fade-down">IСТОРIЯ</div>
+        <div class="history--wave" id="history-wave-mobile-drag-container" data-aos="fade-down" data-aos-delay="300">
             <div id="history-wave-mobile-drag-element">
                 <svg id="history-wave-mobile-drag-element-svg" class="history--wave-svg" width="1362" height="158" viewBox="0 0 1362 158" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
@@ -337,22 +391,22 @@
     </section>
     <section class="page--company-strategy">
         <div class="section--text">
-            <div class="section--text-title">
+            <div class="section--text-title" data-aos="fade-down">
                 <div class="txt--heading color--white">
                     СТРАТЕГІЯ
                     РОЗВИТКУ
                 </div>
             </div>
-            <div class="section--text-desc txt--regular color--white">
+            <div class="section--text-desc txt--regular color--white" data-aos="fade-down" data-aos-delay="300">
                 Багато років діяльності Econia визначалися стратегічною метою стати лідируючою компанією на ринку питної
                 води і дитячого харчування України, створюючи нові продукти, відриваючи нові категорії.
             </div>
-            <div class="section--text-desc txt--regular color--white">
+            <div class="section--text-desc txt--regular color--white" data-aos="fade-down" data-aos-delay="500">
                 Останні 10 років
                 компанія визначила своїм стратегічним розвиток –зовнішньоекономічну діяльність.
             </div>
         </div>
-        <div class="section--wave" id="strategy-wave-mobile-drag-container">
+        <div class="section--wave" id="strategy-wave-mobile-drag-container" data-aos="fade-down" data-aos-delay="700">
             <div id="strategy-wave-mobile-drag-element">
                 <svg width="1356" height="386" viewBox="0 0 1356 386" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M306.083 237.532C421.237 90.931 640.545 55.5937 795.92 158.604" stroke="white"
@@ -367,8 +421,7 @@
                             <path class="history--wave-click-zone" fill-rule="evenodd" clip-rule="evenodd"
                                   d="M37 19.2119C37 29.153 28.9411 37.2119 19 37.2119C9.05888 37.2119 1 29.153 1 19.2119C1 9.27079 9.05887 1.21191 19 1.21191C28.9411 1.21191 37 9.27079 37 19.2119Z"
                                   fill="url(#paint0_radial)" stroke="url(#paint1_radial)"/>
-                            <path class="history--wave-click-zone" fill-rule="evenodd" clip-rule="evenodd"
-                                  class="element--button-arrow"
+                            <path class="history--wave-click-zone element--button-arrow" fill-rule="evenodd" clip-rule="evenodd"
                                   d="M17.7069 26.1934L16.2969 24.7834L20.8769 20.1934L16.2969 15.6034L17.7069 14.1934L23.7069 20.1934L17.7069 26.1934Z"
                                   fill="white"/>
                             <circle cx="19.8" cy="20.1934" r="19" stroke-width="1" stroke="url(#paint1_radial)"/>
@@ -403,8 +456,7 @@
                             <path class="history--wave-click-zone" fill-rule="evenodd" clip-rule="evenodd"
                                   d="M37 19.2119C37 29.153 28.9411 37.2119 19 37.2119C9.05888 37.2119 1 29.153 1 19.2119C1 9.27079 9.05887 1.21191 19 1.21191C28.9411 1.21191 37 9.27079 37 19.2119Z"
                                   fill="url(#paint0_radial)" stroke="url(#paint1_radial)"/>
-                            <path class="history--wave-click-zone" fill-rule="evenodd" clip-rule="evenodd"
-                                  class="element--button-arrow"
+                            <path class="history--wave-click-zone element--button-arrow" fill-rule="evenodd" clip-rule="evenodd"
                                   d="M17.7069 26.1934L16.2969 24.7834L20.8769 20.1934L16.2969 15.6034L17.7069 14.1934L23.7069 20.1934L17.7069 26.1934Z"
                                   fill="white"/>
                             <circle cx="17.7069" cy="20.1934" r="19" stroke-width="1" stroke="url(#paint1_radial)"/>
@@ -440,8 +492,7 @@
                             <path class="history--wave-click-zone" fill-rule="evenodd" clip-rule="evenodd"
                                   d="M37 19.2119C37 29.153 28.9411 37.2119 19 37.2119C9.05888 37.2119 1 29.153 1 19.2119C1 9.27079 9.05887 1.21191 19 1.21191C28.9411 1.21191 37 9.27079 37 19.2119Z"
                                   fill="url(#paint0_radial)" stroke="url(#paint1_radial)"/>
-                            <path class="history--wave-click-zone" fill-rule="evenodd" clip-rule="evenodd"
-                                  class="element--button-arrow"
+                            <path class="history--wave-click-zone element--button-arrow" fill-rule="evenodd" clip-rule="evenodd"
                                   d="M17.7069 26.1934L16.2969 24.7834L20.8769 20.1934L16.2969 15.6034L17.7069 14.1934L23.7069 20.1934L17.7069 26.1934Z"
                                   fill="white"/>
                             <circle cx="17.7069" cy="20.1934" r="19" stroke-width="1" stroke="url(#paint1_radial)"/>
@@ -477,24 +528,24 @@
     </section>
     <section class="page--company-honors">
         <div class="section--text">
-            <div class="section--text-title">
+            <div class="section--text-title" data-aos="fade-down">
                 <div class="txt--heading">
                     Визнання
                 </div>
             </div>
             <div class="section--text-description">
-                <div class="section--text-description-inner txt--regular">
+                <div class="section--text-description-inner txt--regular" data-aos="fade-down" data-aos-delay="300">
                     Компанія Econia пишається тим, що наша діяльність була високо оцінена професіоналами, провідними
                     експертами галузі, відмічена на престижних виставках та ярмарках.
                 </div>
-                <div class="section--text-description-inner txt--regular">
+                <div class="section--text-description-inner txt--regular" data-aos="fade-down" data-aos-delay="600">
                     Для нас це не просто нагороди – це стимул не зупинятися на досягнутому, а продовжувати продовжити
                     вдосконалення у щоденній роботі.
                 </div>
             </div>
         </div>
         <div class="section--slider">
-            <div class="section--slider-inner company--honors-slider-wrapper">
+            <div class="section--slider-inner company--honors-slider-wrapper" data-aos="fade-down" data-aos-delay="300">
                 <div class="slider--item">
                     <div class="slider--item-image">
                         <img src="images/company/slider/award-1.png" alt="Award">
@@ -556,12 +607,12 @@
     </section>
     <section class="page--company-management">
         <div class="slider--section">
-            <div class="section--item">
+            <div class="section--item" data-aos="fade-down">
                 <div class="txt--heading color--white">
                     Кращий керівник 2012 року
                 </div>
             </div>
-            <div class="section--item section--item-slider company--management-slider-wrapper">
+            <div class="section--item section--item-slider company--management-slider-wrapper" data-aos="fade-down" data-aos-delay="300">
                 <div class="slider--item">
                     <div class="slider--item-image">
                         <img src="images/company/slider/management.png" alt="Manager">
@@ -597,7 +648,7 @@
                 </div>
             </div>
         </div>
-        <div class="quote--section">
+        <div class="quote--section" data-aos="fade-left" data-aos-delay="300">
             <div class="quote--section-slider company--management-quote-slider-wrapper">
                 <div class="slider--item txt--medium color--cerulean">
                     “Почесна Грамота Міністерства аграрної політики та продовольства України "За значний внесок у
@@ -616,10 +667,10 @@
         </div>
     </section>
     <section class="page--company-development">
-        <div class="txt--heading">
+        <div class="txt--heading" data-aos="fade-down">
             виробництво
         </div>
-        <div class="content--section">
+        <div class="content--section" data-aos="fade-down" data-aos-delay="300">
             <div class="image--slider-section">
                 <div class="company-development-image-slider">
                     <div class="slider--item">
@@ -694,11 +745,11 @@
     </section>
     <section class="page--company-quality">
         <div class="section--heading">
-            <div class="txt--heading">
+            <div class="txt--heading" data-aos="fade-down">
                 Контроль якості продукції
             </div>
         </div>
-        <div class="section--content">
+        <div class="section--content" data-aos="fade-down" data-aos-delay="300">
             <div class="section--content-item">
                 <div class="item--image">
                     <img src="images/company/quality/img-1.png" alt="Photo">
@@ -771,20 +822,20 @@
         </div>
         <div class="slider--item">
             <div class="section--top">
-                <div class="section--top-heading">
+                <div class="section--top-heading" data-aos="fade-down">
                     <div class="txt--heading">
                         Екскурсії
                         на завод
                     </div>
                 </div>
-                <div class="section--top-text">
+                <div class="section--top-text" data-aos="fade-down" data-aos-delay="300">
                     <div class="txt--medium-dark">
                         Компанії належить сучасний
                         та інноваційний завод з виробництва питної води і дитячого харчування.
                         Ми пишаємось своїм виробництвом і з радістю проведемо екскурсію для вас.
                     </div>
                 </div>
-                <div class="section--top-button page--company-excursion-photo-button">
+                <div class="section--top-button page--company-excursion-photo-button" data-aos="fade-down" data-aos-delay="600">
                     <div class="circle--button-gradient">
                         <span></span>
                     </div>
@@ -794,7 +845,7 @@
                 </div>
             </div>
             <div class="section--body">
-                <div class="section--body-image">
+                <div class="section--body-image" data-aos="fade-down" data-aos-delay="300">
                     <img src="images/company/excursion.png" alt="Excursion">
                 </div>
                 <div class="section--body-button-mobile company--excursions-section-body-button-mobile">
@@ -805,7 +856,7 @@
                         <img src="images/icons/icon-blue-arrow.png" alt="Icon">
                     </div>
                 </div>
-                <div class="section--body-form">
+                <div class="section--body-form" data-aos="fade-down" data-aos-delay="600">
                     <div class="form--text txt--medium-dark">
                         Екскурсії проводяться безкоштовно, для груп і індивідуальних відвідувачів кожну середу
                         за попереднім записом.
@@ -851,7 +902,8 @@
 
 <footer class="layout--container component--footer">
     <div class="footer--controls">
-        <img class="footer--scroll-button" src="images/scroll-button.svg" alt="Scroll Icon">
+        <div></div>
+        <img class="footer--scroll-button" src="images/scroll-button.jpg" alt="Scroll Icon">
         <img class="footer--scroll-button-top" src="images/scroll-top-button.png" alt="Scroll Icon">
     </div>
     <div class="footer--text">
@@ -862,14 +914,26 @@
         <p class="txt--regular">Усі права захищені © <span id="footer-copyright"></span> Econia</p>
     </div>
     <div class="footer-mobile-controls">
-        <div class="control--left">
+        <div class="control--left" id="footer-contacts-button">
             <img src="images/icons/footer-chat-icon.png" alt="Chat">
         </div>
-        <div class="control--right">
+        <div class="control--right" id="telephone-contacts-button">
             <img src="images/icons/footer-call-icon.png" alt="Call">
+        </div>
+    </div>
+    <div class="contacts--form contacts--form-hidden" id="contacts-form">
+        <div class="contacts--form-body background--malibu-gradient">
+            <img src="images/icons/icon-close.png" alt="Icon Close" class="contacts--form-close"
+                 id="contacts-close-form-button">
+        </div>
+    </div>
+    <div class="contacts--form contacts--form-hidden" id="telephone-form">
+        <div class="contacts--form-body background--malibu-gradient">
+            <img src="images/icons/icon-close.png" alt="Icon Close" class="contacts--form-close"
+                 id="telephone-close-form-button">
         </div>
     </div>
 </footer>
 
-<script src="index.f1849caf29c99b46501c.js"></script></body>
+<script src="index.8b00f7f515598d39fcbf.js"></script></body>
 </html>

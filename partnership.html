@@ -7,6 +7,9 @@
     <script src="vendor/jquery.min.js"></script>
     <script src="vendor/jquery.onepage-scroll.min.js"></script>
     <script src="vendor/slick-slider.min.js"></script>
+    <script src="vendor/slick-slider.min.js"></script>
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
 <body>
 <div class="layout--preloader">
@@ -14,107 +17,156 @@
     <div></div>
     <div class="layout--preloader-last"></div>
 </div>
-<header class="layout--container component--header">
-    <div class="header--menu-button">
-        <span></span>
-    </div>
-    <a href="home.html" class="header--logo">
-        <div class="header--logo-group">
-            <img src="images/rect.svg" alt="Dash">
-            <img src="images/rect.svg" alt="Dash">
-            <img class="layout--line" src="images/rect.svg" alt="Dash">
+<div class="header--wrapper">
+    <header class="layout--container component--header">
+        <div class="header--mobile-lines">
+            <div class="header--menu-button">
+                <span></span>
+            </div>
         </div>
-        <img src="images/logo-text.svg" alt="Econia">
-    </a>
-    <div class="header--menu">
-        <a href="/company.html" class="header--menu-item txt--legal layout--line">
-            Компанія
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+        <a href="home.html" class="header--logo">
+            <div class="header--logo-group">
+                <img src="images/rect.svg" alt="Dash">
+                <img src="images/rect.svg" alt="Dash">
+                <img src="images/rect.svg" alt="Dash">
+            </div>
+            <img src="images/logo-text.svg" alt="Econia">
         </a>
-        <a href="#" class="header--menu-item txt--legal">
-            Бренди
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="/partnership.html" class="header--menu-item txt--legal">
-            Партнерство
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="#" class="header--menu-item txt--legal">
-            Кар’єра
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="/news.html" class="header--menu-item txt--legal layout--line">
-            Новини
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <a href="#" class="header--menu-item txt--legal">
-            Контакти
-            <img src="images/icons/icon-white-arrow.png" alt="Arrow">
-        </a>
-        <div class="header--menu-copyright">
-            <a href="#" class="txt--legal-white">
-                СУСПІЛЬНА ВІДПОВІДАЛЬНІСТЬ
+        <div class="header--menu">
+            <div class="header--menu-item-wrapper">
+                <a href="/company.html" class="header--menu-item txt--legal">
+                    Компанія
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/brands.html" class="header--menu-item txt--legal">
+                    Бренди
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/partnership.html" class="header--menu-item txt--legal">
+                    Партнерство
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/careers.html" class="header--menu-item txt--legal">
+                    Кар’єра
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/news.html" class="header--menu-item txt--legal">
+                    Новини
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+            <div class="header--menu-item-wrapper">
+                <a href="/contacts.html" class="header--menu-item txt--legal">
+                    Контакти
+                    <img src="images/icons/icon-white-arrow.png" alt="Arrow">
+                </a>
+            </div>
+
+            <div class="header--menu-copyright">
+                <a href="#" class="txt--legal-white">
+                    СУСПІЛЬНА ВІДПОВІДАЛЬНІСТЬ
+                </a>
+                <a href="#" class="txt--regular-light">Політика конфіденційності</a>
+                <p class="txt--regular-light">Усі права захищені © <span id="footer-copyright"></span> Econia</p>
+            </div>
+        </div>
+        <div class="header--controls">
+            <a href="/search.html" class="header--controls-search">
+                <img src="images/search-icon.svg" alt="Search icon">
             </a>
-            <a href="#" class="txt--regular-light">Політика конфіденційності</a>
-            <p class="txt--regular-light">Усі права захищені © <span id="footer-copyright"></span> Econia</p>
+            <a href="#" class="header--controls-distributors" id="distr-open-form-button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                     y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                    <g><path d="M500,10C229.4,10,10,229.4,10,500c0,270.6,219.4,490,490,490c270.6,0,490-219.4,490-490C990,229.4,770.6,10,500,10L500,10z M500,966.1C242.6,966.1,33.9,757.4,33.9,500C33.9,242.6,242.6,33.9,500,33.9c257.4,0,466.1,208.7,466.1,466.1C966.1,757.4,757.4,966.1,500,966.1L500,966.1z"/>
+                        <path d="M750.5,759.8c0.5,1.6-0.6,0.5-0.2,2.1L750.5,759.8c0,8.2-6.6,14.8-14.9,14.8c-8.2,0-15.5-6.6-15.5-14.8l0,0c-28.6-94.5-116.3-163.3-220.1-163.3c-103.8,0-192,72.1-220.6,166.6l0.4-3.3c0,9.8-9.8,14.8-15.5,14.8c-8.2,0-14.8-6.6-14.8-14.8l0,0c0.4-1.6,0.5-3.2,0.9-4.8c0.1-0.4,0.2-0.8,0.4-1.2c24.2-83,88.6-148.8,170.8-174.8c-63.2-29.6-107.1-93.6-107.1-168c0-102.5,83.1-185.6,185.6-185.6c102.5,0,185.6,83.1,185.6,185.6c0,74.4-43.9,138.4-107.1,168c82.2,26,146.5,91.9,170.8,174.8C749.3,754.2,750.3,759.4,750.5,759.8L750.5,759.8L750.5,759.8z M655.8,410.9c0-86.1-69.8-155.9-155.9-155.9c-86.1,0-155.9,69.8-155.9,155.9c0,86.1,69.8,155.9,155.9,155.9C586,566.8,655.8,497,655.8,410.9L655.8,410.9L655.8,410.9z"/></g>
+</svg>
+            </a>
+            <div class="header--language-selector">
+                <div class="language--selector-current">
+                    UA
+                </div>
+                <div class="language--selector-list-wrapper">
+                    <div class="language--selector-list">
+                        <a class="list--item">
+                            <div class="list--item-image">
+                                <img src="images/lang-current.png" alt="lang">
+                            </div>
+                            <div class="list--item-text">
+                                UA
+                            </div>
+                        </a>
+                        <a class="list--item">
+                            <div class="list--item-image">
+                                <img src="images/lang.png" alt="lang">
+                            </div>
+                            <div class="list--item-text">
+                                EN
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="header--controls">
-        <a href="#" class="header--controls-search">
-            <img src="images/search-icon.svg" alt="Search icon">
-        </a>
-<!--        <div class="header&#45;&#45;language-select">-->
-<!--            <div class="language&#45;&#45;select-visible txt&#45;&#45;ns-regular"></div>-->
-<!--            <div class="language&#45;&#45;select-hidden">-->
-<!--                <div class="language&#45;&#45;select-hidden-item txt&#45;&#45;ns-regular">UA</div>-->
-<!--                <div class="language&#45;&#45;select-hidden-item txt&#45;&#45;ns-regular">EN</div>-->
-<!--            </div>-->
-<!--        </div>-->
-    </div>
-</header>
+        <div class="distr--form distr--form-hidden" id="distr--form">
+            <div class="distr--form-body background--malibu-gradient">
+                <img src="images/icons/icon-close.png" alt="Icon Close" class="distr--form-close"
+                     id="distr-close-form-button">
+            </div>
+        </div>
+    </header>
+</div>
 
 
 <div class="layout--container page--partnership" id="page-partnership-page">
     <section class="page--partnership-intro">
         <div class="section--description">
-            <div class="section--left">
+            <div class="section--left" data-aos="fade-down">
                 <div class="txt--heading">Партнерство</div>
             </div>
             <div class="section--mobile-reverse">
-                <div class="section--center">
+                <div class="section--center" data-aos="fade-down" data-aos-delay="300">
                     Ми створили професійний продукт, який відповідає жорстким вимогам. Про Econia можна сказати, як про
                     професійну, енергетичну, новаторську компанію, де все розвивається швидко, позитивно і динамічно.
                 </div>
-                <div class="section--image">
+                <div class="section--image" data-aos="fade-down" data-aos-delay="600">
                     <img src="images/partnership/intro.png" alt="Glass">
                 </div>
             </div>
         </div>
         <div class="section--content">
-            <div class="section--image">
+            <div class="section--image" data-aos="fade-right" data-aos-delay="300">
                 <img src="images/partnership/big-dash-group.png" alt="Logo">
             </div>
             <div class="section--center">
-                <div class="content--item">
+                <div class="content--item" data-aos="fade-right" data-aos-delay="500">
                     <img src="images/partnership/small-dash.png" alt="Dash">
-                    <span class="txt--regular">дистриб'ютори</span>
+                    <span class="txt--regular-dark">дистриб'ютори</span>
                 </div>
-                <div class="content--item">
+                <div class="content--item" data-aos="fade-right" data-aos-delay="700">
                     <img src="images/partnership/small-dash.png" alt="Dash">
-                    <span class="txt--regular">постачальники</span>
+                    <span class="txt--regular-dark">постачальники</span>
                 </div>
-                <div class="content--item">
+                <div class="content--item" data-aos="fade-right" data-aos-delay="900">
                     <img src="images/partnership/small-dash.png" alt="Dash">
-                    <span class="txt--regular"> внутрішнє партнерство</span>
+                    <span class="txt--regular-dark"> внутрішнє партнерство</span>
                 </div>
             </div>
         </div>
     </section>
     <section class="page--partnership-partners">
-        <div class="section--left">
+        <div class="section--left" data-aos="fade-down">
             <div class="txt--heading">Партнери</div>
         </div>
-        <div class="section--slider page--partnership-partners-slider">
+        <div class="section--slider page--partnership-partners-slider" data-aos="fade-down" data-aos-delay="300">
             <div class="section--slider-item">
                 <img src="images/partnership/partners/auchan.png" alt="Partner">
             </div>
@@ -142,8 +194,8 @@
         </div>
     </section>
     <section class="page--partnership-team">
-        <div class="team--section background--malibu-gradient">
-            <div class="section--left">
+        <div class="team--section background--malibu-gradient" data-aos="fade-down">
+            <div class="section--left" data-aos="fade-down" data-aos-delay="300">
                 <div class="section--left-title txt--heading">НАША КОМАНДА</div>
             </div>
             <div class="section--slider partnership--team-slider">
@@ -194,7 +246,7 @@
                 </div>
             </div>
         </div>
-        <div class="quote--section">
+        <div class="quote--section" data-aos="fade-left" data-aos-delay="600">
             <div class="quote--section-header">
                 <img src="images/icons/icon-quote.png" alt="Qoute">
                 <img src="images/icons/icon-quote.png" alt="Qoute">
@@ -220,47 +272,47 @@
     </section>
     <section class="page--partnership-advantages">
         <div class="content--grid">
-            <div class="content--grid-item content--grid-item-heading">
+            <div class="content--grid-item content--grid-item-heading" data-aos="fade-down">
                 <div class="txt--heading color--white">
                     Головна наша перевага
                 </div>
             </div>
-            <div class="content--grid-item">
+            <div class="content--grid-item" data-aos="fade-down" data-aos-delay="300">
                 <div class="txt--medium text--bigger">
                     Вони гіпоалергенні, екологічні, адаптовані до віку малюка та випускаються
                     у зручних інноваційних ергономічних упаковках.
                 </div>
             </div>
-            <div class="content--grid-item">
+            <div class="content--grid-item" data-aos="fade-down" data-aos-delay="300">
                 <div class="txt--medium text--bigger">
                     Широкий асортимент (понад 100 номіналів) дитячого харчування та питної води
                 </div>
             </div>
-            <div class="content--grid-item content--grid-item-narrowed">
+            <div class="content--grid-item content--grid-item-narrowed" data-aos="fade-right" data-aos-delay="300">
                 <div class="partnership--button"><span></span></div>
                 <div class="txt--medium">
                     Широкий асортимент (понад 100 номіналів) дитячого харчування та питної води
                 </div>
             </div>
-            <div class="content--grid-item content--grid-item-narrowed">
+            <div class="content--grid-item content--grid-item-narrowed" data-aos="fade-right" data-aos-delay="600">
                 <div class="partnership--button"><span></span></div>
                 <div class="txt--medium">
                     Неповторний концепт вашої ТМ - ІНДИВІДУАЛЬНІ ПОЄДНАННЯ СМАКІВ (враховуючи традиції вашої країни!)
                 </div>
             </div>
-            <div class="content--grid-item content--grid-item-narrowed">
+            <div class="content--grid-item content--grid-item-narrowed" data-aos="fade-right" data-aos-delay="900">
                 <div class="partnership--button"><span></span></div>
                 <div class="txt--medium">
                     Інноваційні екологічні упаковки (tetra-pack, pouch) з індивідуальним дизайном
                 </div>
             </div>
-            <div class="content--grid-item content--grid-item-narrowed">
+            <div class="content--grid-item content--grid-item-narrowed" data-aos="fade-right" data-aos-delay="600">
                 <div class="partnership--button"><span></span></div>
                 <div class="txt--medium">
                     Гнучкі та лояльні умови співпрацi
                 </div>
             </div>
-            <div class="content--grid-item content--grid-item-narrowed">
+            <div class="content--grid-item content--grid-item-narrowed" data-aos="fade-right" data-aos-delay="900">
                 <div class="partnership--button"><span></span></div>
                 <div class="txt--medium">
                     Високу якість продукції
@@ -272,37 +324,37 @@
     </section>
     <section class="page--partnership-private-label">
         <div class="private--label-steps">
-            <div class="txt--heading">
+            <div class="txt--heading" data-aos="fade-down">
                 Етапи <br> створення <br>Private Label
             </div>
             <div class="container--grid">
-                <div class="container--grid-item">
+                <div class="container--grid-item" data-aos="fade-right">
                     <div class="partnership--button"><span></span></div>
                     <div class="txt--medium-dark">
                         Перший етап <br> створення продукту<br> Private Label
                     </div>
                 </div>
-                <div class="container--grid-item">
+                <div class="container--grid-item" data-aos="fade-right" data-aos-delay="300">
                     <div class="partnership--button"><span></span></div>
                     <div class="txt--medium-dark">
                         Перший етап створення продукту.<br>
                         Неповторний концепт вашої ТМ враховуючи традиції вашої країни!
                     </div>
                 </div>
-                <div class="container--grid-item">
+                <div class="container--grid-item" data-aos="fade-right" data-aos-delay="600">
                     <div class="partnership--button"><span></span></div>
                     <div class="txt--medium-dark">
                         Інноваційні екологічні упаковки<br> (tetra-pack, pouch) з індивідуальним дизайном
                     </div>
                 </div>
-                <div class="container--grid-item">
+                <div class="container--grid-item" data-aos="fade-right" data-aos-delay="600">
                     <div class="partnership--button"><span></span></div>
                     <div class="txt--medium-dark">
                         Високу якість продукції<br>
                         Контролюємо якість на<br> рівні кращих європейських<br> лабораторій, підтверджуємо
                     </div>
                 </div>
-                <div class="container--grid-item">
+                <div class="container--grid-item" data-aos="fade-right" data-aos-delay="900">
                     <div class="partnership--button"><span></span></div>
                     <div class="txt--medium-dark">
                         Останнiй етап створення продукту
@@ -311,19 +363,19 @@
             </div>
         </div>
         <div class="feedback--section">
-            <div class="section--left">
+            <div class="section--left" data-aos="fade-down">
                 <div class="txt--heading">
                     PRIVATE LABEL
                 </div>
             </div>
-            <div class="section--center">
+            <div class="section--center" data-aos="fade-down" data-aos-delay="300">
                 <div class="txt--regular">
                     Ми запрошуємо вас стати партнером компанії і розширити спектр продукції під власною ТМ. Реалізація
                     спільних партнерських програм дозволить нам сформувати унікальні конкурентні переваги і досягти
                     максимального ефекту в розвитку бізнесу.
                 </div>
             </div>
-            <div class="section--form">
+            <div class="section--form" data-aos="fade-down" data-aos-delay="600">
                 <form action="">
                     <div class="input--group input--group-dark">
                         <input id="fb-name-input" type="text" required/>
@@ -353,7 +405,8 @@
 
 <footer class="layout--container component--footer">
     <div class="footer--controls">
-        <img class="footer--scroll-button" src="images/scroll-button.svg" alt="Scroll Icon">
+        <div></div>
+        <img class="footer--scroll-button" src="images/scroll-button.jpg" alt="Scroll Icon">
         <img class="footer--scroll-button-top" src="images/scroll-top-button.png" alt="Scroll Icon">
     </div>
     <div class="footer--text">
@@ -364,14 +417,26 @@
         <p class="txt--regular">Усі права захищені © <span id="footer-copyright"></span> Econia</p>
     </div>
     <div class="footer-mobile-controls">
-        <div class="control--left">
+        <div class="control--left" id="footer-contacts-button">
             <img src="images/icons/footer-chat-icon.png" alt="Chat">
         </div>
-        <div class="control--right">
+        <div class="control--right" id="telephone-contacts-button">
             <img src="images/icons/footer-call-icon.png" alt="Call">
+        </div>
+    </div>
+    <div class="contacts--form contacts--form-hidden" id="contacts-form">
+        <div class="contacts--form-body background--malibu-gradient">
+            <img src="images/icons/icon-close.png" alt="Icon Close" class="contacts--form-close"
+                 id="contacts-close-form-button">
+        </div>
+    </div>
+    <div class="contacts--form contacts--form-hidden" id="telephone-form">
+        <div class="contacts--form-body background--malibu-gradient">
+            <img src="images/icons/icon-close.png" alt="Icon Close" class="contacts--form-close"
+                 id="telephone-close-form-button">
         </div>
     </div>
 </footer>
 
-<script src="index.f1849caf29c99b46501c.js"></script></body>
+<script src="index.8b00f7f515598d39fcbf.js"></script></body>
 </html>
